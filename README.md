@@ -1,4 +1,4 @@
-# Documentação: Placar Libertadores
+# Placar Conmebol Libertdadores
 
 O Placar Libertadores é uma aplicação web simples que exibe o placar de um jogo da Copa Libertadores. Ele foi desenvolvido utilizando HTML, CSS e (Futuramente JavaScript).
 
