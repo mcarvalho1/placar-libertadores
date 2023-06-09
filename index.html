@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placar libertadores</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/style/web.css">
 </head>
 <body>
     <main class="viewport">
         <div class="container">
-            <div class="scoreboard">
-            <!-- Logo placar -->
-            <div class="logo-placar">
-                <img class="img-logo" src="./img/image.png" alt="Logo-Libertadores">
+            <div class="container-score">
+                <div class="scoreboard">
+                <!-- Logo placar -->
+                <div class="logo-placar">
+                    <img class="img-logo" src="./img/image.png" alt="Logo-Libertadores">
+                </div>
+                <div class="first-team">
+                    <p class="first-name-team">FLA</p>
+                </div>
+                <div class="score">
+                    <p class="score-teams">3</p>
+                    <div class="hifen"></div>
+                    <p class="score-teams">1</p>
+                </div>
+                <div class="second-team">
+                    <p class="second-name-team">FLU</p>
+                </div>
+                <div class="box-time">
+                    <p id="timer" class="time-match">00:00</p>
+                </div>
+                </div>
             </div>
-            <div class="first-team">
-                <p class="first-name-team">FLA</p>
-            </div>
-            <div class="score">
-                <p class="score-teams">3</p>
-                <div class="hifen"></div>
-                <p class="score-teams">1</p>
-            </div>
-            <div class="second-team">
-                <p class="second-name-team">FLU</p>
-            </div>
-            <div class="box-time">
-                <p class="time-match">00:00</p>
-            </div>
+    
+            <div class="container-dashboard">
+                <div class="button-controller">
+                    <button id="start-button" class="button-style">Iniciar</button>
+                    <button id="reset-button" class="button-style">Reiniciar</button>
+                </div>
             </div>
         </div>
     </main>
+
+    <script src="src/js/web.js"></script>
+
 </body>
 </html>
