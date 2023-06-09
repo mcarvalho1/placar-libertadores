@@ -19,9 +19,9 @@ O placar do jogo será exibido no centro da página.
 Estamos planejando adicionar as seguintes funcionalidades no futuro:
 
 1. Capacidade de atualizar o placar.
-2. Suporte para exibir informações adicionais, como escalações, substituições e estatísticas.
-3. Opções de personalização avançadas para permitir que os usuários escolham as equipes e estilos preferidos.
-4. Responsividade para garantir uma boa experiência em dispositivos móveis e tablets.
+2. Opções de personalização avançadas para permitir que os usuários escolham as equipes e estilos preferidos.
+3. Responsividade para garantir uma boa experiência em dispositivos móveis e tablets.
+
 Fique atento às atualizações futuras do Placar Libertadores para aproveitar essas funcionalidades adicionais!
 
 Observação: Esta documentação descreve o estado atual do projeto e as funcionalidades planejadas para o futuro. Para obter a versão mais recente do código-fonte e acompanhar o desenvolvimento do projeto, consulte o repositório oficial do Placar Libertadores.
