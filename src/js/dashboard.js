@@ -26,16 +26,6 @@ function atualizarPlacares() {
     var teamOneScoreDisplay = document.getElementById('team-one-score-display');
     var teamTwoScoreDisplay = document.getElementById('team-two-score-display');
     
-    if (teamOneScoreInput < 1 || teamOneScoreInput > 10) {
-        alert("O placar do Time 1 deve estar entre 1 e 10.");
-        return;
-    }
-    
-    if (teamTwoScoreInput < 1 || teamTwoScoreInput > 10) {
-        alert("O placar do Time 2 deve estar entre 1 e 10.");
-        return;
-    }
-    
     teamOneScoreDisplay.textContent = teamOneScoreInput;
     teamTwoScoreDisplay.textContent = teamTwoScoreInput;
 }
@@ -49,3 +39,20 @@ function atualizarCores() {
     firstTeam.style.setProperty('--team-one-color', teamOneColorInput);
     secondTeam.style.setProperty('--team-two-color', teamTwoColorInput);
 }
+
+function atualizarTudo() {
+    atualizarCores();
+    atualizarPlacares();
+    atualizarTimes();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('team-one').addEventListener('input', () => { atualizarTudo() })
+    document.getElementById('team-two').addEventListener('input', () => { atualizarTudo() })
+
+    document.getElementById('team-one-color').addEventListener('input', () => { atualizarTudo() })
+    document.getElementById('team-two-color').addEventListener('input', () => { atualizarTudo() })
+
+    document.getElementById('team-one-score').addEventListener('input', () => { atualizarTudo() })
+    document.getElementById('team-two-score').addEventListener('input', () => { atualizarTudo() })
+});
