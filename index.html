@@ -31,13 +31,42 @@
                     <p id="timer" class="time-match">00:00</p>
                 </div>
                 </div>
+
+                <div class="scoreboard-buttons">
+                    <button id="start-button">Iniciar</button>
+                    <button id="reset-button">Reiniciar</button>
+                </div>
             </div>
     
             <div class="container-dashboard">
-                <div class="button-controller">
-                    <button id="start-button" class="button-style">Iniciar</button>
-                    <button id="reset-button" class="button-style">Reiniciar</button>
+                <h1 class="container-dashboard__title">Dashboard Placar</h1>
+                <div class="container-dashboard-teams">
+                    <h3 class="container-dashboard-teams__title">Configurador de times</h3>
+                    <div class="container-dashboard-fields">
+                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 1" id='team-one' required />
+                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 2" id='team-two' required />
+                    </div>
+
+                    <h3 class="container-dashboard-teams__title">Configurador de cores dos times</h3>
+                    <div class="container-dashboard-colors">
+                        <div class="input-wrapper">
+                          <input class="container-dashboard-colors__choose" type="color" value="#000" id="team-one-color" />
+                          <label for="team-one-color">Time 1</label>
+                        </div>
+                      
+                        <div class="input-wrapper">
+                          <input class="container-dashboard-colors__choose" type="color" value="#000" id="team-two-color" />
+                          <label for="team-two-color">Time 2</label>
+                        </div>
+                      </div>
+
+                    <h3 class="container-dashboard-teams__title">Configurador do placar</h3>
+                    <div class="container-dashboard-fields">
+                        <input type="number" class="container-dashboard-fields__input" placeholder="Placar time 1" id='team-one-score' min="1" max="5" required />
+                        <input type="number" class="container-dashboard-fields__input" placeholder="Placar time 1" id='team-two-score' min="1" max="5" required />
+                    </div>
                 </div>
+                <button id="">Enviar</button>
             </div>
         </div>
     </main>

@@ -6,6 +6,32 @@ hmtl, body {
     padding: 0px;
 }
 
+button {
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    font-size: 20px;
+
+    background-color: #72345e;
+    color: #fff;
+    border: 1px solid #220e1b;
+    border-radius: 5px;
+    transition: .2s;
+    font-family: 'Prompt', sans-serif; 
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translate(-4px, -4px);
+    background: #a4598b;
+    box-shadow: 4px 4px #000;
+}
+
+button:active{
+    transform: translate(0);
+    box-shadow: none;
+}
+
 .viewport {
     display: flex;
     justify-content: center;
@@ -24,12 +50,20 @@ hmtl, body {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 700px;
         height: 500px;
         background-color: rgb(255, 255, 255);
         border-radius: 10px 0px 0px 10px;
         box-shadow: 6px 6px #000;
         border-right: 3px dashed #72345e;
+
+        .scoreboard-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
     }
 
     .scoreboard {
@@ -161,39 +195,92 @@ hmtl, body {
 /* DASHBOARD CONTAINER */
 
 .container-dashboard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
     width: 500px;
     height: 500px;
     background-color: rgb(255, 255, 255);
     border-radius: 0px 10px 10px 0px;
     box-shadow: 6px 6px #000;
 
-    .button-controller {
+    .container-dashboard__title {
+        font-family: 'Prompt', sans-serif;
+        text-transform: uppercase;
+        color: #72345e;
+        margin: 20px 0 0 0;
+    }
+
+    .container-dashboard-teams {
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: center;
+
+        .container-dashboard-teams__title {
+            margin: 20px 0 10px 0;
+            font-family: 'Prompt', sans-serif;
+            color: #72345e;
+            text-transform: uppercase;
+        }
+    }
+    
+    .container-dashboard-fields {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
     }
 
-    .button-style {
-        width: 120px;
-        height: 40px;
-        margin: 10px;
-        font-size: 20px;
+    .container-dashboard-fields__input {
+        font-size:14px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width: 150px;
+        border:none;
+        border-bottom:1px solid #72345e;
+    }
 
-        background-color: #72345e;
-        color: #fff;
-        border: 1px solid #220e1b;
-        border-radius: 5px;
-        transition: .2s;
-        font-family: 'Prompt', sans-serif; 
+    .container-dashboard-fields__input:focus{
+        outline: none;
+    }
+
+    .container-dashboard-colors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+      }
+      
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin: 0 40px;
+
+        font-family: 'Prompt', sans-serif;
+        color: #72345e;
+        text-transform: uppercase;
+      }
+      
+      .container-dashboard-colors__choose {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        border: none;
         cursor: pointer;
-    }
-    .button-style:hover {
-        transform: translate(-4px, -4px);
-        background: #a4598b;
-        box-shadow: 4px 4px #000;
-    }
-    .button-style:active{
-        transform: translate(0);
-        box-shadow: none;
+      }
+      
+      .container-dashboard-colors__choose::-webkit-color-swatch {
+        border-radius: 50%;
+        border: 3px solid #000000;
+      }
+      
+      .container-dashboard-colors__choose::-moz-color-swatch {
+        border-radius: 50%;
+        border: 3px solid #000000;
     }
 }
