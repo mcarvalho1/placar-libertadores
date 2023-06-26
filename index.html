@@ -17,15 +17,15 @@
                     <img class="img-logo" src="./img/image.png" alt="Logo-Libertadores">
                 </div>
                 <div class="first-team">
-                    <p class="first-name-team">FLA</p>
+                    <p id="score-team-one" class="first-name-team"></p>
                 </div>
                 <div class="score">
-                    <p class="score-teams">3</p>
+                    <p class="score-teams" id="team-one-score-display">0</p>
                     <div class="hifen"></div>
-                    <p class="score-teams">1</p>
+                    <p class="score-teams" id="team-two-score-display">0</p>
                 </div>
                 <div class="second-team">
-                    <p class="second-name-team">FLU</p>
+                    <p id="score-team-two" class="second-name-team"></p>
                 </div>
                 <div class="box-time">
                     <p id="timer" class="time-match">00:00</p>
@@ -43,19 +43,19 @@
                 <div class="container-dashboard-teams">
                     <h3 class="container-dashboard-teams__title">Configurador de times</h3>
                     <div class="container-dashboard-fields">
-                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 1" id='team-one' required />
-                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 2" id='team-two' required />
+                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 1" id='team-one' maxlength="3" required />
+                        <input type="input" class="container-dashboard-fields__input" placeholder="Time 2" id='team-two' maxlength="3" required />
                     </div>
 
                     <h3 class="container-dashboard-teams__title">Configurador de cores dos times</h3>
                     <div class="container-dashboard-colors">
                         <div class="input-wrapper">
-                          <input class="container-dashboard-colors__choose" type="color" value="#000" id="team-one-color" />
+                          <input class="container-dashboard-colors__choose" type="color" value="#000000" id="team-one-color" />
                           <label for="team-one-color">Time 1</label>
                         </div>
                       
                         <div class="input-wrapper">
-                          <input class="container-dashboard-colors__choose" type="color" value="#000" id="team-two-color" />
+                          <input class="container-dashboard-colors__choose" type="color" value="#000000" id="team-two-color" />
                           <label for="team-two-color">Time 2</label>
                         </div>
                       </div>
@@ -63,15 +63,16 @@
                     <h3 class="container-dashboard-teams__title">Configurador do placar</h3>
                     <div class="container-dashboard-fields">
                         <input type="number" class="container-dashboard-fields__input" placeholder="Placar time 1" id='team-one-score' min="1" max="5" required />
-                        <input type="number" class="container-dashboard-fields__input" placeholder="Placar time 1" id='team-two-score' min="1" max="5" required />
+                        <input type="number" class="container-dashboard-fields__input" placeholder="Placar time 2" id='team-two-score' min="1" max="5" required />
                     </div>
                 </div>
-                <button id="">Enviar</button>
+                <button onclick="atualizarTimes(), atualizarPlacares(), atualizarCores()">Enviar</button>
             </div>
         </div>
     </main>
 
-    <script src="src/js/web.js"></script>
+    <script src="src/js/scoreboard.js"></script>
+    <script src="src/js/dashboard.js"></script>
 
 </body>
 </html>

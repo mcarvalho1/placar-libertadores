@@ -12,9 +12,9 @@ button {
     margin: 20px;
     font-size: 20px;
 
-    background-color: #72345e;
+    background-color: #263A29;
     color: #fff;
-    border: 1px solid #220e1b;
+    border: 1px solid #41644A;
     border-radius: 5px;
     transition: .2s;
     font-family: 'Prompt', sans-serif; 
@@ -23,7 +23,7 @@ button {
 
 button:hover {
     transform: translate(-4px, -4px);
-    background: #a4598b;
+    background: #41644A;
     box-shadow: 4px 4px #000;
 }
 
@@ -36,7 +36,7 @@ button:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(72, 29, 59);
+    background-color: #263A29;
     height: 100vh;
 
     .container {
@@ -56,7 +56,7 @@ button:active{
         background-color: rgb(255, 255, 255);
         border-radius: 10px 0px 0px 10px;
         box-shadow: 6px 6px #000;
-        border-right: 3px dashed #72345e;
+        border-right: 3px dashed #263A29;
 
         .scoreboard-buttons {
             display: flex;
@@ -112,7 +112,7 @@ button:active{
                 height: 5px;
                 position: absolute;
                 top: 45px;
-                background: linear-gradient(to right, rgb(197, 38, 19) 50%, rgb(197, 38, 19) 50%);
+                background-color: var(--team-one-color);
             }
         }
 
@@ -167,7 +167,7 @@ button:active{
                 height: 5px;
                 position: absolute;
                 top: 45px;
-                background: linear-gradient(to right, rgb(140, 42, 60) 50%, rgb(0, 113, 75) 50%);
+                background-color: var(--team-two-color);
             }
         }
 
@@ -209,7 +209,7 @@ button:active{
     .container-dashboard__title {
         font-family: 'Prompt', sans-serif;
         text-transform: uppercase;
-        color: #72345e;
+        color: #263A29;
         margin: 20px 0 0 0;
     }
 
@@ -221,7 +221,7 @@ button:active{
         .container-dashboard-teams__title {
             margin: 20px 0 10px 0;
             font-family: 'Prompt', sans-serif;
-            color: #72345e;
+            color: #263A29;
             text-transform: uppercase;
         }
     }
@@ -239,7 +239,8 @@ button:active{
         display:block;
         width: 150px;
         border:none;
-        border-bottom:1px solid #72345e;
+        border-bottom:1px solid #263A29;
+        text-transform: uppercase;
     }
 
     .container-dashboard-fields__input:focus{
